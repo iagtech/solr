@@ -4,8 +4,9 @@ CORES="${CORES:-sample}"
 
 for i in $(echo $CORES | tr "," "\n")
 do
-  cp -r example-core /var/solr/data/$i
-  sed -i "s/EXAMPLE/$i/g" /var/solr/data/$i/core.properties
+  cp -r example-core /tmp/$i
+  sed -i "s/EXAMPLE/$i/g" /tmp/$i/core.properties
+  cp -r /tmp/$i /var/solr/data/$i
 done
 
 cp solr.xml /var/solr/data/solr.xml
