@@ -1,4 +1,4 @@
-# IAG Benefits, LLC Maintenane Container (iagllctech/solr)
+# IAG Benefits, LLC SOLR (iagllctech/solr)
 
 This repository provides a docker-ized version of SOLR that pre-creates cores configured via an environment variable.
 
